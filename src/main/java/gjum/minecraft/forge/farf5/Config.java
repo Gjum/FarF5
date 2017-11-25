@@ -15,7 +15,7 @@ public final class Config {
     @Expose()
     public boolean modEnabled = false;
     @Expose()
-    public int farDistance = 64;
+    public float farDistance = 64;
     @Expose()
     public float zoomFactor = 1.5f;
 
