@@ -16,6 +16,8 @@ public final class Config {
     public boolean modEnabled = false;
     @Expose()
     public int farDistance = 64;
+    @Expose()
+    public float zoomFactor = 1.5f;
 
     private File configFile;
 

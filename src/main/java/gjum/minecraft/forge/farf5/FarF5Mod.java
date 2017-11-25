@@ -42,6 +42,8 @@ public class FarF5Mod {
 
     public final KeyBinding openGuiKey = new KeyBinding(MOD_ID + ".key.openGui", Keyboard.KEY_NONE, MOD_NAME);
     public final KeyBinding toggleEnabledKey = new KeyBinding(MOD_ID + ".key.toggleEnabled", Keyboard.KEY_NONE, MOD_NAME);
+    public final KeyBinding zoomTowardsKey = new KeyBinding(MOD_ID + ".key.zoomTowards", Keyboard.KEY_NONE, MOD_NAME);
+    public final KeyBinding zoomAwayKey = new KeyBinding(MOD_ID + ".key.zoomAway", Keyboard.KEY_NONE, MOD_NAME);
 
     public final Config config = new Config();
 
@@ -74,6 +76,8 @@ public class FarF5Mod {
 
         ClientRegistry.registerKeyBinding(openGuiKey);
         ClientRegistry.registerKeyBinding(toggleEnabledKey);
+        ClientRegistry.registerKeyBinding(zoomTowardsKey);
+        ClientRegistry.registerKeyBinding(zoomAwayKey);
     }
 
     @Mod.EventHandler
@@ -90,6 +94,14 @@ public class FarF5Mod {
         }
         if (toggleEnabledKey.isPressed()) {
             config.modEnabled = !config.modEnabled;
+            config.save();
+        }
+        if (zoomTowardsKey.isPressed()) {
+            config.farDistance /= config.zoomFactor;
+            config.save();
+        }
+        if (zoomAwayKey.isPressed()) {
+            config.farDistance *= config.zoomFactor;
             config.save();
         }
     }
