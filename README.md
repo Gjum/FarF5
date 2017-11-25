@@ -18,8 +18,8 @@ You can also access the settings through Forge's mod list:
 
 ## Example
 
-With FarF5: ![With FarF5](https://i.imgur.com/KB5KBXw.jpg)
-Without FarF5: (spot yourself in the center) ![Without FarF5](https://i.imgur.com/WMHFVI6.jpg)
+With FarF5: (spot yourself in the center) ![With FarF5](https://i.imgur.com/KB5KBXw.jpg)
+Without FarF5: ![Without FarF5](https://i.imgur.com/WMHFVI6.jpg)
 
 ## Development
 
