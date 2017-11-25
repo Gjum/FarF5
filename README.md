@@ -16,6 +16,11 @@ You can also access the settings through Forge's mod list:
 - from the main menu: `Mods` -> select `Far F5` on the left -> click `Config` at the bottom left
 - from the ingame menu: `Mods config` -> select `Far F5` on the left -> click `Config` at the bottom left
 
+## Example
+
+With FarF5: ![With FarF5](https://i.imgur.com/KB5KBXw.jpg)
+Without FarF5: (spot yourself in the center) ![Without FarF5](https://i.imgur.com/WMHFVI6.jpg)
+
 ## Development
 
 Package the distributable `.jar`: `gradlew reobf`
