@@ -104,7 +104,7 @@ public class GuiConfig extends GuiScreen {
         boolean valid = true;
 
         try {
-            Integer.parseUnsignedInt(txtFarDistance.getText());
+            Float.parseFloat(txtFarDistance.getText());
         } catch (NumberFormatException e) {
             valid = false;
         }
@@ -153,7 +153,7 @@ public class GuiConfig extends GuiScreen {
     }
 
     private void saveAndLeave() {
-        config.farDistance = Integer.parseUnsignedInt(txtFarDistance.getText());
+        config.farDistance = Float.parseFloat(txtFarDistance.getText());
 
         config.save();
 
