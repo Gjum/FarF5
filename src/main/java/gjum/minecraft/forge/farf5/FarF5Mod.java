@@ -49,7 +49,7 @@ public class FarF5Mod {
 
     private static void patchRenderer() {
         final SimpleReloadableResourceManager mcResourceManager = (SimpleReloadableResourceManager) mc.getResourceManager();
-        final List<IResourceManagerReloadListener> reloadListeners = getPrivateValue(SimpleReloadableResourceManager.class, mcResourceManager, "reloadListeners");
+        final List<IResourceManagerReloadListener> reloadListeners = getPrivateValue(SimpleReloadableResourceManager.class, mcResourceManager, "reloadListeners", "field_110546_b");
 
         // remove old renderer
         reloadListeners.remove(mc.entityRenderer);
